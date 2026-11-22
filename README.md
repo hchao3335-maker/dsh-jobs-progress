@@ -137,7 +137,7 @@ git clone https://github.com/hchao3335-maker/dsh-jobs-progress.git
 在 DSH 会话里让 agent 使用插件管理器安装本目录：
 
 ```text
-用 plugin_manager install_bundle 安装 C:\path\to\dsh-jobs-progress
+用 plugin_manager install_bundle 安装 <本目录的绝对路径>
 ```
 
 或者先打包再安装：
