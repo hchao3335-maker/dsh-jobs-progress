@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Background job progress monitor",
+    "description": "Keeps a live progress card above the composer for this session's background jobs. It observes each running job's output, turns the last percentage or `[7/9]` fraction into a progress bar, and shows elapsed time, output bytes, and the latest output line. It also supports an expandable output tail, a two-press stop, collapsed-state persistence, and a 30-second settle grace so short foreground commands do not flicker."
+  }
+}

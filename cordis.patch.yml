@@ -1,0 +1,8 @@
+# dsh-jobs-progress — bundle patch.
+#
+# The Host half is intentionally empty: the monitor is a browser-side view over
+# the already-installed client `jobs` service. Inserting the row is what makes
+# the profile load the client half (`dsh.client` in package.json).
+- insert:
+    - id: jobs-progress
+      name: dsh-jobs-progress

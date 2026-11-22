@@ -1,0 +1,68 @@
+{
+  "name": "dsh-jobs-progress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSH plugin: a persistent background-job progress monitor above the composer — live percentage/fraction progress, output tail, elapsed time, byte count, and a two-press stop button.",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "background-jobs",
+    "progress",
+    "progress-monitor",
+    "cordis"
+  ],
+  "author": "xianyiliang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hchao3335-maker/dsh-jobs-progress.git"
+  },
+  "homepage": "https://github.com/hchao3335-maker/dsh-jobs-progress#readme",
+  "bugs": {
+    "url": "https://github.com/hchao3335-maker/dsh-jobs-progress/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "scripts": {
+    "test": "node --test test/client.test.mjs",
+    "check": "node --check index.js && node --check client.js && node --test test/client.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-job-controller",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
