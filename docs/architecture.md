@@ -1,5 +1,9 @@
 # Architecture
 
+<p align="center">
+  <img src="../assets/architecture.svg" alt="Architecture: shell job → Host job registry → Client ctx.jobs → composer dock panel" width="900">
+</p>
+
 ## Data flow
 
 ```mermaid

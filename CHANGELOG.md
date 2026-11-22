@@ -4,6 +4,17 @@ All notable changes to this plugin are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 semantic versioning.
 
+## [Unreleased]
+
+### Documentation
+
+- Reorganized the README in the visual language of the other DSH plugins: centered
+  logo, badges, icon navigation, feature table, panel illustration, architecture
+  diagram, compatibility matrix, verification summary, and Star History.
+- Added an original logo, panel illustration, architecture diagram, and icon set
+  under `assets/`, plus a matching bilingual English README.
+- Renamed the CI workflow to `ci.yml`.
+
 ## [1.0.0] - 2026-11-22
 
 ### Added

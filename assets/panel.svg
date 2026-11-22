@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" width="900" height="270" role="img" aria-label="后台任务进度面板示意：两行任务、百分比进度条与输出行">
+  <title>dsh-jobs-progress panel illustration</title>
+  <style>
+    .panel { fill: #f7f8fc; stroke: #ccd3e3; stroke-width: 1.5; }
+    .divider { stroke: #e3e7f0; stroke-width: 1; }
+    .h { font: 600 16px ui-sans-serif, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1f2430; }
+    .s { font: 400 13px ui-sans-serif, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #5b6478; }
+    .m { font: 400 12px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #4d5566; }
+    .num { font: 400 11px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #8a93a6; }
+    .pill { fill: #eef1f7; stroke: #d7dce8; stroke-width: 1; }
+    .btn { fill: #eef1f7; stroke: #d7dce8; stroke-width: 1; }
+    .track { fill: #e3e7f0; }
+    .fill { fill: #22a06b; }
+    .dot { fill: #22a06b; }
+    .chev { fill: none; stroke: #8a93a6; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .stop { fill: #e2565f; }
+  </style>
+
+  <rect class="panel" x="40" y="20" width="820" height="220" rx="16" />
+
+  <!-- header -->
+  <rect x="60" y="32" width="16" height="12" rx="3" fill="none" stroke="#6c7cff" stroke-width="1.6" />
+  <path d="M64 38h8M64 42h5" stroke="#6c7cff" stroke-width="1.4" stroke-linecap="round" />
+  <text class="h" x="88" y="48">后台任务</text>
+  <text class="s" x="186" y="48">共 2 个 · 运行中 1 · 已结束 1</text>
+  <path class="chev" d="M822 38l4 4 4-4" />
+  <line class="divider" x1="56" y1="66" x2="844" y2="66" />
+
+  <!-- running row -->
+  <circle class="dot" cx="66" cy="94" r="4.5" />
+  <rect class="pill" x="78" y="82" width="52" height="24" rx="6" />
+  <text class="m" x="104" y="99" text-anchor="middle">pwsh</text>
+  <text class="m" x="144" y="99">pnpm build</text>
+  <text class="num" x="650" y="99" text-anchor="middle">1:32</text>
+  <text class="num" x="720" y="99" text-anchor="middle">12.4 KB</text>
+  <rect class="btn" x="788" y="82" width="28" height="28" rx="6" />
+  <path class="chev" d="M797 95l5 5 5-5" />
+  <rect class="btn" x="824" y="82" width="28" height="28" rx="6" />
+  <rect class="stop" x="834" y="92" width="8" height="8" rx="1.5" />
+
+  <rect class="track" x="78" y="122" width="360" height="8" rx="4" />
+  <rect class="fill" x="78" y="122" width="281" height="8" rx="4" />
+  <text x="454" y="131" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#22a06b">78%</text>
+  <text class="m" x="494" y="131">[7/9] 正在压缩 dist/assets</text>
+
+  <!-- settled row -->
+  <line class="divider" x1="56" y1="146" x2="844" y2="146" />
+  <circle class="dot" cx="66" cy="174" r="4.5" />
+  <rect class="pill" x="78" y="162" width="52" height="24" rx="6" />
+  <text class="m" x="104" y="179" text-anchor="middle">pwsh</text>
+  <text class="m" x="144" y="179">pnpm test</text>
+  <text class="s" x="520" y="179">已完成 · exit code: 0</text>
+  <text class="num" x="720" y="179" text-anchor="middle">0:41</text>
+  <path class="chev" d="M824 169l4 4 4-4" />
+</svg>

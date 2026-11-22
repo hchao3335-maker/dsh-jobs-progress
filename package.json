@@ -37,6 +37,7 @@
     "client.js",
     "cordis.patch.yml",
     "locale/*.json",
+    "assets",
     "docs",
     "README.md",
     "README.en.md",
